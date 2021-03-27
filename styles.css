@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* MENU */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 400px;
+}
+#bienvenue {
+  background-color: black;
+}
+
+#jump-start {
+  background: url(/img/points.png), url(/img/jump-start.png) no-repeat;
+  background-size: cover;
+}
+
+#rodeo-pump {
+  background: url(/img/points.png), url(/img/rodeo-pump.jpg) no-repeat;
+  background-size: cover;
+}
+
+#pac-man {
+  background: url(/img/points.png), url(/img/pac-man.jpg) no-repeat;
+  background-size: cover;
+}
+
+#mega-pop {
+  background: url(/img/points.png), url(/img/mega-pop.jpg) no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  /* border: 1px solid red; */
+  height: 50px;
+  color: white;
+  animation: test 1s 0.5s forwards;
+  opacity: 0;
+  text-shadow: 0 0 15px black;
+}
+
+.container span {
+  font-weight: 700;
+}
+
+.container ul {
+  display: flex;
+}
+
+.container ul li {
+  margin-left: 0.7rem;
+  font-weight: 100;
+}
+
+.container ul li a {
+  color: white;
+}
+
+/* BANNIERE */
+
+#flex-presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1100px;
+  height: calc(100vh - 50px);
+  /* border: 1px solid red; */
+}
+
+.gauche-presentation {
+  color: white;
+  width: 50%;
+  text-shadow: 0 0 15px black;
+  /* animation: test 1s; */
+}
+
+.gauche-presentation h1 {
+  font-size: 3rem;
+  animation: test 1s forwards;
+  opacity: 0;
+}
+
+.gauche-presentation span {
+  display: block;
+  animation: test 1s 0.2s forwards;
+  opacity: 0;
+}
+
+.droite-presentation {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  animation: apparitionimage 1s 0.4s forwards;
+  opacity: 0;
+}
+.droite-presentation img {
+  max-width: 70%;
+}
+
+/*  GRILLE */
+
+#projet-grille {
+  width: 1100px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#projet-grille h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#projet-grille span {
+  margin-bottom: 1rem;
+  display: block;
+}
+.grid {
+  display: grid;
+  /* width: 1100px; */
+  grid:
+    "item1 item2 item3" 1fr
+    "item4 . ." 1fr
+    / 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid h3 {
+  color: white;
+  text-shadow: 0 0 15px black;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 140px;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: opacity 0.5s;
+}
+
+.item:hover {
+  opacity: 0.7;
+}
+
+.item1 {
+  grid-area: item1;
+  background: center url(/img/jump-start.png);
+  background-size: cover;
+}
+
+.item2 {
+  grid-area: item2;
+  background: center url(/img/rodeo-pump.jpg);
+  background-size: cover;
+}
+
+.item3 {
+  grid-area: item3;
+  background: center url(/img/pac-man.jpg);
+  background-size: cover;
+}
+
+.item4 {
+  grid-area: item4;
+  background: center url(/img/mega-pop.jpg);
+  background-size: cover;
+}
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1100px;
+  height: 120px;
+  margin-bottom: 2rem;
+  scroll-behavior: smooth;
+}
+
+.contact a {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: black;
+  transition: opacity 0.3s;
+}
+
+.contact a:hover {
+  opacity: 0.8;
+}
+
+/*  FOOTER */
+
+footer {
+  border-top: 1px solid black;
+  padding: 30px 0;
+}
+.container-footer {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 750px;
+  }
+  #flex-presentation {
+    width: 750px;
+  }
+  #projet-grille {
+    width: 750px;
+  }
+  #projet-grille .grid {
+    grid:
+      "item1 item2"
+      "item3 item4";
+  }
+  .contact {
+    width: 750px;
+  }
+  .container-footer {
+    width: 750px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  #flex-presentation {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  #projet-grille {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  #projet-grille .grid {
+    grid:
+      "item1 item2"
+      "item3 item4";
+  }
+  .contact {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .container-footer {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes apparitionimage {
+  0% {
+    transform: translatex(100px);
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}

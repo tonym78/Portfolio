@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>MARQUES Tony | Accueil</title>
+  </head>
+  <body>
+    <section id="bienvenue">
+      <header>
+        <div id="flex-header" class="container">
+          <span>MARQUES Tony</span>
+          <nav>
+            <ul>
+              <li><a href="">Accueil</a></li>
+              <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- ON UTILISE ENCORE FLEXBOX POUR ALIGNER -->
+      <div id="flex-presentation">
+        <div class="gauche-presentation">
+          <h1>Portfolio</h1>
+          <span
+            >Développeur Web maitrisant parfaitement les aspects de la création
+            d'un site internet efficace, simple et intuitif. Bienvenue sur mon
+            portfolio</span
+          >
+        </div>
+        <div class="droite-presentation">
+          <img src="/img/illustration.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- LA PARTIE "CREATIONS" -->
+
+      <!-- ON UTILISE UNE GRILLE POUR LES PROJETS -->
+      <div id="projet-grille">
+        <div class="container-grid">
+          <h2>Créations</h2>
+          <span>Voici toutes mes créations</span>
+          <div class="grid">
+            <a href="jump-start.html" class="item item1">
+              <h3>Jump Start</h3>
+            </a>
+            <a href="rodeo-pump.html" class="item item2">
+              <h3>Rodeo Pump</h3>
+            </a>
+            <a href="pac-man.html" class="item item3">
+              <h3>Pac Man</h3>
+            </a>
+            <a href="mega-pop.html" class="item item4">
+              <h3>Mega Pop</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Alors, on travaille ensemble ?</p>
+      <a href="">Envoyer un email</a>
+    </section>
+
+    <footer>
+      <div class="container-footer">© MARQUES Tony</div>
+    </footer>
+  </body>
+</html>
